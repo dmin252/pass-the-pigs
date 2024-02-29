@@ -10,8 +10,9 @@ public class PassThePigs {
         boolean gamePlaying = true;
         System.out.println("Welcome to My Pass-the-Pigs Game!");
         gamePigs = new Pigs();
-        players.add(new HumanPlayer("Daniel"));
+        //players.add(new HumanPlayer("Daniel"));
         players.add(new MinBot("Min"));
+        players.add(new CharlieBot("Charlie"));
 
 
         for (int k = 0; k < players.size(); k++) {
@@ -36,7 +37,7 @@ public class PassThePigs {
                     if (scores.get(i) >= winning_score) {
                         System.out.println(players.get(i).getName() + " Won! Their strategy was " + players.get(i).getStrategy());
                         gamePlaying = false;
-                        break;
+                        return;
                     }
                     if (points == 0) {
                         handScore = 0;
