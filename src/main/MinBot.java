@@ -5,10 +5,12 @@ public class MinBot extends Player{
 
     public MinBot (String name) {
         super(name);
-        strategy = "risky";
+        strategy = "Minion Strategy (One Shot, One Kill)";
     }
     public boolean wantsToRoll(int myScore, int handScore, ArrayList<Integer> otherScores, int winning_score) {
-        
-        return true;
+        if (handScore < 100) {
+            return true;
+        }
+        return false;
     }
 }

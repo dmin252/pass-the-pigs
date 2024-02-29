@@ -13,8 +13,10 @@ public class PassThePigs {
         boolean gamePlaying = true;
         System.out.println("Welcome to My Pass-the-Pigs Game!");
         gamePigs = new Pigs();
-        players.add(new HumanPlayer("Min"));
-        players.add(new HumanPlayer("Minion"));
+        players.add(new HumanPlayer("Daniel"));
+        players.add(new MinBot("Min"));
+
+
         for (int k = 0; k < players.size(); k++) {
             scores.add(0);
         }
@@ -30,7 +32,8 @@ public class PassThePigs {
                     int points = pointCalculation.calculatePoints(round);
                     scores.set(i, scores.get(i) + points);
                     handScore += points;
-                    System.out.println(players.get(i).getName() + " rolls a " + round[0] + " and a " + round[1] + " for " + points + " points");
+                    System.out.println(players.get(i).getName() + " rolls a " + round[0] + " and a " + round[1] + " for " + points + " points.");
+                    System.out.println(players.get(i).getName() + "'s handscore is " + handScore);
 
                     
                     if (scores.get(i) >= winning_score) {
@@ -41,10 +44,15 @@ public class PassThePigs {
                     if (points == 0) {
                         handScore = 0;
                         scores.set(i, currentScore);
+                        System.out.println("That's a Pig Out!");
                         break;
+                        
                     } 
                     
-                    System.out.println(players.get(i).getName() + "'s score is " + scores.get(i));
+                    for (int j = 0; j < players.size(); j++) {
+                        System.out.println(players.get(j).getName() + "'s score is " + scores.get(j));
+                    }
+                    
 
                     
                     System.out.println();
