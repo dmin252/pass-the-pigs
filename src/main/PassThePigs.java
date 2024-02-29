@@ -28,7 +28,7 @@ public class PassThePigs {
 
                     
                     if (scores.get(i) > winning_score) {
-                        System.out.println(players.get(i).getName() + " Won! Their strategy was " + players.getStrategy());
+                        System.out.println(players.get(i).getName() + " Won! Their strategy was " + players.get(i).getStrategy());
                         gamePlaying = false;
                     }
 
