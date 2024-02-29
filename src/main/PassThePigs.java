@@ -1,10 +1,7 @@
-import java.util.Scanner;
-import java.util.Random;
 import java.util.ArrayList;
 
 public class PassThePigs {
     private static final int winning_score = 100;
-    private static Random random = new Random();
     private static ArrayList<Integer> scores = new ArrayList<Integer>();
     private static ArrayList<Player> players = new ArrayList<Player>();
     private static Pigs gamePigs;

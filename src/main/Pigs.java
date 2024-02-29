@@ -4,7 +4,6 @@ public class Pigs {
     final private double RazorBackProbability = 0.224;
     final private double TrotterProbability = 0.088;
     final private double SnouterProbability = 0.03;
-    final private double LeaningJowler = 0.007;
     
     private String PigPossible() {
         double randomValue = Math.random();
