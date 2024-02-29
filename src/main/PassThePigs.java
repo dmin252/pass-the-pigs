@@ -13,6 +13,8 @@ public class PassThePigs {
         //players.add(new HumanPlayer("Daniel"));
         players.add(new MinBot("Min"));
         players.add(new CharlieBot("Charlie"));
+        players.add(new RandomBot("Randomer"));
+        players.add(new CowardBot("Coward"));
 
 
         for (int k = 0; k < players.size(); k++) {
