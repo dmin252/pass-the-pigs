@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class HumanPlayer extends Player {
-    Scanner scanner = new Scanner(System.in);
     private final String strategy;
-
+    Scanner scanner = new Scanner(System.in);
+    
     public HumanPlayer(String name) {
         super(name);
         strategy = "User Input";

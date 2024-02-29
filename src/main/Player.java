@@ -10,7 +10,6 @@ public class Player {
     }
     public boolean wantsToRoll(int myScore, int handScore, ArrayList<Integer> otherScores, int winning_score) {
         return true;
-        
     }
 
     public String getName() {
