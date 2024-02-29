@@ -15,7 +15,8 @@ public class PassThePigs {
         players.add(new CharlieBot("Charlie"));
         players.add(new RandomBot("Randomer"));
         players.add(new CowardBot("Coward"));
-
+        players.add(new SmartBot("Smart"));
+        players.add(new AdvancedBot("Advanced"));
 
         for (int k = 0; k < players.size(); k++) {
             scores.add(0);
