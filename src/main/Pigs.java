@@ -23,6 +23,7 @@ public class Pigs {
 
 
     }
+    //Only rolling two pigs
     public String[] rollPigs() {
         String[] rollPigs = new String[2];
         rollPigs[0] = PigPossible();

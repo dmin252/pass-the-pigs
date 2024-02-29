@@ -28,7 +28,7 @@ public class PassThePigs {
                 int currentScore = scores.get(i);
                 int handScore = 0;
                 while (players.get(i).wantsToRoll(currentScore, handScore, scores, winning_score)) {
-                    String[] round = gamePigs.rollPigs();
+                    String[] round = gamePigs.rollPigs(); //each pigs
 
                     int points = pointCalculation.calculatePoints(round);
                     scores.set(i, scores.get(i) + points);
@@ -36,7 +36,7 @@ public class PassThePigs {
                     System.out.println(players.get(i).getName() + " rolls a " + round[0] + " and a " + round[1] + " for " + points + " points.");
                     System.out.println(players.get(i).getName() + "'s handscore is " + handScore);
 
-                    
+                    //end game if score over 100
                     if (scores.get(i) >= winning_score) {
                         System.out.println(players.get(i).getName() + " Won! Their strategy was " + players.get(i).getStrategy());
                         gamePlaying = false;
