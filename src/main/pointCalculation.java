@@ -5,26 +5,24 @@ public class pointCalculation {
             return totalScore;
         }
 
-        if (roll[0].equals("Trotter") || roll[0].equals("Razorback")) {
+        if (roll[0].equals("Trotter") || roll[0].equals("RazorBack")) {
             totalScore += 5;
         } else if (roll[0].equals("Snouter")) {
             totalScore += 10;
-        } else if (roll[0].equals("Jowler")) {
+        } else if (roll[0].equals("LeaningJowler")) {
             totalScore += 15;
-        }
-
-        if (roll[1].equals("Trotter") || roll[1].equals("Razorback")) {
+        } else if (roll[1].equals("Trotter") || roll[1].equals("RazorBack")) {
             totalScore += 5;
         } else if (roll[1].equals("Snouter")) {
             totalScore += 10;
-        } else if (roll[1].equals("Jowler")) {
+        } else if (roll[1].equals("LeaningJowler")) {
             totalScore += 15;
         }
 
         if (totalScore == 0) {
             return 1;
         } else if (roll[0].equals(roll[1])) {
-            totalScore *= 2;
+            totalScore *= 4;
         }
         return totalScore;
     }

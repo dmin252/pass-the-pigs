@@ -6,7 +6,6 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
-        this.strategy = strategy;
     }
     public boolean wantsToRoll(int myScore, int handScore, ArrayList<Integer> otherScores, int winning_score) {
         return true;

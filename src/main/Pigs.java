@@ -22,14 +22,12 @@ public class Pigs {
             return "LeaningJowler";
         }
 
-        
+
     }
     public String[] rollPigs() {
         String[] rollPigs = new String[2];
         rollPigs[0] = PigPossible();
         rollPigs[1] = PigPossible();
-
         return rollPigs;
-
     }
 }
